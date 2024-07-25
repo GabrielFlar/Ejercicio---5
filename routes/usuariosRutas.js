@@ -93,7 +93,7 @@ ruta.get("/mostrarProductos",async (req, res)=>{
         const productobd=new ProductoBD();
         const [productosBD]=await productobd.mostrarProducto();
         //console.log(productosBD);
-        res.render("mostrarProductos",{productosBD});
+        res.render("mostrarProducto",{productosBD});
     } catch (error) {
         console.log("Error al recuperar los productos "+ error);
     }
